@@ -1,199 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <title>MOF.JS Simple CrossWord Game</title>
-</head>
-<body>
-        <img src="pattern1.jpg" class="patterntop"/>
-        <img src="pattern2.jpg" class="patternbottom"/>
-        <div class="col-lg-8 col-lg-offset-2 wjec-container">       
-        <h1 class="col-md-12 title">Teka Teki Silang (TTS) Spesial Hari Oeang ke 73</h1>
-        <div class="col-lg-6 text-center wjec-crossword" id="crossword"></div>      
-        <div class="wjec-crossword-clues col-lg-3 margin-bottom-md">
-          <h3 class="clueTitle">Mendatar</h3>
-          <div class="clueBlock" id="cluesAcross">
-            <div class="clueDirection" id="directionAcross"></div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <title>MOF.JS on Hari Oeang RI ke-73</title>
+  </head>
+  <body>
+    <img src="~/assets/img/pattern1.jpg" class="patterntop" />
+    <img src="~/assets/img/pattern2.jpg" class="patternbottom" />
+
+    <div class="col-lg-10 col-xs-12 col-lg-offset-1 wjec-container">
+      <h1 class="title">
+        Selamat Datang di Booth MOF.JS
+      </h1>
+      <div class="row">
+        <div class="col-md-6 card-menu">
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>Apa itu MOF.JS</h2>
             </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
+            <div class="panel-body">
+              <p>Pengenalan komunitas MOF.JS</p>
             </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
-            <div class="line">
-              <input class="word" type="text" />
-              <span class="lineNum"></span>
-              <input class="clue" />
-            </div>
-      
           </div>
         </div>
-      
-      
-      <div class="wjec-crossword-clues col-lg-3 margin-bottom-md">
-        <h3 class="clueTitle">Menurun</h3>
-        <div class="clueBlock" id="cluesDown">
-          <div class="clueDirection" id="directionDown"></div>
+        <div class="col-md-6 card-menu">
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>Di mana booth MOF.JS?</h2>
+            </div>
+            <div class="panel-body">
+              <p>Cari tau lokasi booth MOF.JS di acara Family Gathering Hari Oeang RI le-73</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 card-menu">
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>Buku Tamu</h2>
+            </div>
+            <div class="panel-body">
+              <p>Isi buku tamu pengunjung booth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 card-menu">
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>TTS Spesial Hari Oeang</h2>
+            </div>
+            <div class="panel-body">
+              <p>Tantang pengetahuanmu di bidang Keuangan Negara dengan menjawab soal Teka-Teki Silang</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 card-menu">
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>IoT Corner</h2>
+            </div>
+            <div class="panel-body">
+                <p>Salah satu yang ada di booth MOF.JS, demo, workshop Internet of Things</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 card-menu">
+          <div class="panel">
+            <div class="panel-heading">
+              <h2>Video Game Corner</h2>
+            </div>
+            <div class="panel-body">
+              <p>Hibur diri bersama keluarga dengan bermain game bersama</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="row info margin-bottom-sm">
-            <div class="col-md-12 buttonList">
-            <button class="btn btn-lg btn-default pen-ignore hidden-print" id="btnReset">Ulang <i class="fa fa-repeat"></i></button>
-            <button class="btn btn-lg btn-default pen-ignore hidden-print" id="btnCheck">Cek Jawaban <i class="fa fa-check"></i></button>
-            <button class="btn btn-lg btn-default pen-ignore hidden-print" id="btnHint" data-toggle="tooltip" title="Add a few letters to each word">Clue</button>
-          </div>
     </div>
-    </div>
-</body>
 
-<div class="footer">
-        <p>Simple Crossword Game Assembled by <a href="https://mofjs-id.github.io">MOF.JS Team</a></p>
-      </div>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+    <div class="footer">
+      <p>
+        Laman Web Virtual Booth untuk Family Gathering Hari Oeang Republik Indonesia ke-73 by
+        <a href="https://mofjs-id.github.io">MOF.JS Team</a>
+      </p>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>
