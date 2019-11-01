@@ -1,8 +1,8 @@
 import * as data from './questions.json';
 var orderArr = [];
-var questionNumber = 10;
+var questionNumber = 8;
 
-console.log(data);
+
 
 function shuffle(array) {
   for (var i = array.length - 1; i > 0; i--) {
@@ -19,7 +19,7 @@ function init() {
     orderArr.push(index);
     shuffle(orderArr);
   });
-  console.log(orderArr); 
+
   loadClues() 
 };
 
@@ -812,16 +812,19 @@ String.prototype.replaceAll = function(replaceThis, withThis) {
 
 $("#btnCheck").on('click', function() {
   $(this).blur();
+  let AllCorrect = true;
   //clear values from incorrect boxes
   $(".square input").each(function() {
     if ($(this).attr('data-letter') !== $(this).val().toUpperCase()) {
-      $(this).val('');
       $(this).removeClass('correct');
-
+      $(this).addClass('incorrect');
+      AllCorrect = false;
     } else {
       $(this).addClass('correct');
+      $(this).removeClass('incorrect');
     }
   });
+  
 });
 
 $('#btnHint').on('click', function() {
