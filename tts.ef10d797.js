@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"script.js":[function(require,module,exports) {
+})({"tts/tts.js":[function(require,module,exports) {
 var orderArr = [];
 var questionNumber = 10;
 var data = [{
@@ -1260,5 +1260,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
-//# sourceMappingURL=/script.75da7f30.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","tts/tts.js"], null)
+//# sourceMappingURL=/tts.ef10d797.js.map

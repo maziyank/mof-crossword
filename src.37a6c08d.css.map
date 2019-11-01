@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,0BACE,UACF,CAEA,uBACE,UACF","file":"src.37a6c08d.css","sourceRoot":"..\\src","sourcesContent":[".card-menu .panel-heading {\r\n  color: gold;\r\n}\r\n\r\n.card-menu .panel-body {\r\n  color: black;\r\n}"]}
