@@ -1,0 +1,34 @@
+extends ../layout.pug
+
+block vars
+  - title = "TTS Spesial"
+
+append styles
+  link(rel="stylesheet", href="./tts.css")
+
+block content
+  h1.title Teka Teki Silang (TTS) Spesial Hari Oeang ke 73
+  #crossword.col-lg-6.text-center.wjec-crossword
+  .wjec-crossword-clues.col-lg-3.margin-bottom-md
+    h3.clueTitle Mendatar
+    #cluesAcross.clueBlock
+      #directionAcross.clueDirection
+      - var n = 0;
+      while n < 25
+        .line
+          input.word(type="text")
+          span.lineNum
+          input.clue
+        - n++
+  .wjec-crossword-clues.col-lg-3.margin-bottom-md
+    h3.clueTitle Menurun
+    #cluesDown.clueBlock
+      #directionDown.clueDirection
+  .row.info.margin-bottom-sm
+    .col-md-12.buttonList
+      button#btnReset.btn.btn-lg.btn-default.pen-ignore.hidden-print Ulang #[i.fa.fa-repeat]
+      button#btnCheck.btn.btn-lg.btn-default.pen-ignore.hidden-print Cek Jawaban #[i.fa.fa-check]
+      button#btnHint.btn.btn-lg.btn-default.pen-ignore.hidden-print(data-toggle="tooltip", title="Add a few letters to each word") Petunjuk
+
+append scripts
+  script(src="./tts.js")

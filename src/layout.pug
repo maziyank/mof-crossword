@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+  block vars
+    - title = "Virtual Booth"
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title #{title} - MOF.JS on Hari Oeang RI ke-73
+    block styles
+      link(rel="shortcut icon", href="/assets/img/favicon.ico", type="image/x-icon")
+      link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+      link(rel="stylesheet", href="/assets/css/style.css")
+  body
+    block head
+      img(src="/assets/img/pattern1.jpg", class="patterntop")
+      img(src="/assets/img/pattern2.jpg", class="patternbottom")
+      img(src="/assets/img/logo.png", class="logo")
+    .col-md-10.col-md-offset-1.col-xs-12.wjec-container
+      block content
+    block foot
+      .footer
+        p Laman Web Virtual Booth untuk Family Gathering Hari Oeang Republik Indonesia ke-73 by #[a(href="https://mofjs.github.id") MOFJS]
+    block scripts
+      script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")

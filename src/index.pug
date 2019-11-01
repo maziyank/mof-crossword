@@ -1,0 +1,51 @@
+extends layout.pug
+
+append vars
+  -
+    menus = [
+      {
+        url: "intro/index.pug",
+        title: "Apa itu MOF.JS",
+        description: "Pengenalan komunitas MOF.JS"
+      },
+      {
+        url: "map/index.pug",
+        title: "Di mana booth MOF.JS?",
+        description: "Cari tau lokasi booth MOF.JS di acara Family Gathering Hari Oeang RI ke-73"
+      },
+      {
+        url: "guest/index.pug",
+        title: "Buku Tamu",
+        description: "Isi buku tamu pengunjung booth."
+      },
+      {
+        url: "tts/index.pug",
+        title: "TTS Spesial Hari Oeang",
+        description: "Tantang pengetahuanmu di bidang Keuangan Negara dengan menjawab soal Teka-Teki Silang"
+      },
+      {
+        url: "iot/index.pug",
+        title: "IoT Corner",
+        description: "Salah satu yang ada di booth MOF.JS, demo, workshop Internet of Things"
+      },
+      {
+        url: "game/index.pug",
+        title: "Video Game Corner",
+        description: "Hibur diri bersama keluarga dengan bermain game bersama"
+      }
+    ];
+
+append styles
+  link(rel="stylesheet", href="index.css")
+
+block content
+  h1.title Selamat Datang di Virtual Booth MOF.JS
+  .row
+    each menu in menus
+      .col-md-6.card-menu
+        a(href=menu.url)
+          .panel
+            .panel-heading
+              h2=menu.title
+            .panel-body
+              p=menu.description
