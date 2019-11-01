@@ -85,7 +85,7 @@ body {
 .buttonList {
   text-align: center;
   margin-top: 30px;
-  magin-bottom:200px;
+  margin-bottom: 200px;
 }
 .buttonList button {
   margin-left: 10px;
@@ -96,6 +96,12 @@ body {
   margin-bottom: 300px;
   padding: 10px;
   font-family: monospace !important;
+}
+
+.thumbnail > video {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
