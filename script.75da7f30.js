@@ -117,170 +117,160 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"tts/questions.json":[function(require,module,exports) {
-module.exports = [{
-  "clue": "Bulan Hari Oeang",
-  "answer": "Oktober"
-}, {
-  "clue": "Bulan Kemerdekaan",
-  "answer": "agustus"
-}, {
-  "clue": "Nama Kabupaten di Jawa Tengah",
-  "answer": "batang"
-}, {
-  "clue": "Nilai Tukar Mata Uang",
-  "answer": "kurs"
-}, {
-  "clue": "Mata Uang Asing",
-  "answer": "valas"
-}, {
-  "clue": "Asal Kata Rupliah",
-  "answer": "rupiya"
-}, {
-  "clue": "Material Uang Koin",
-  "answer": "alumunium"
-}, {
-  "clue": "Seribu Rupiah",
-  "answer": "ceban"
-}, {
-  "clue": "Kenaikan harga-harga",
-  "answer": "inflasi"
-}, {
-  "clue": "Pemotongan Nilai Mata Uang",
-  "answer": "sanering"
-}, {
-  "clue": "Barang ditukar Barang",
-  "answer": "barter"
-}, {
-  "clue": "Oeang Republik Indonesia",
-  "answer": "ori"
-}, {
-  "clue": "Perusahaan Pencetak Rupiah",
-  "answer": "peruri"
-}, {
-  "clue": "Salah Satu Jenis Pajak",
-  "answer": "PPNBM"
-}, {
-  "clue": "Tari di uang Rp10.000",
-  "answer": "pakarena"
-}, {
-  "clue": "Tari di uang Rp50.000",
-  "answer": "legong"
-}, {
-  "clue": "Pulau Terluar Indonesia",
-  "answer": "miangas"
-}, {
-  "clue": "Lambang Negara",
-  "answer": "garuda"
-}, {
-  "clue": "Organisasi Perdagangan Internasinal",
-  "answer": "who"
-}, {
-  "clue": "Laut",
-  "answer": "bahari"
-}, {
-  "clue": "Kepulauan (Ingg)",
-  "answer": "archipelaho"
-}, {
-  "clue": "Pandangan Atau Wawasan",
-  "answer": "visi"
-}, {
-  "clue": "Bentuk Negara",
-  "answer": "republik"
-}, {
-  "clue": "Bagian laba u/ pemegang saham",
-  "answer": "dividen"
-}, {
-  "clue": "Mata Uang Digital",
-  "answer": "bitcoin"
-}, {
-  "clue": "Kecerdasan Buatan",
-  "answer": "AI"
-}, {
-  "clue": "Penanaman modal",
-  "answer": "investasi"
-}, {
-  "clue": "Ibukota Papua Barat",
-  "answer": "manokwari"
-}, {
-  "clue": "Aparatur Pajak",
-  "answer": "fiskus"
-}, {
-  "clue": "Teknologi Keuangan",
-  "answer": "fintech"
-}, {
-  "clue": "Jenis Surat Berharga Negawa",
-  "answer": "sbsn"
-}, {
-  "clue": "Surat Utang",
-  "answer": "obligasi"
-}, {
-  "clue": "Kepemilikan modal",
-  "answer": "saham"
-}, {
-  "clue": "Aparat Pengawas Internal Pemerintah",
-  "answer": "apip"
-}, {
-  "clue": "Pemeriksaan",
-  "answer": "audit"
-}, {
-  "clue": "Uang",
-  "answer": "duit"
-}, {
-  "clue": "1/100",
-  "answer": "sen"
-}, {
-  "clue": "Logam Mulia",
-  "answer": "perak"
-}, {
-  "clue": "Nama Kerajaan",
-  "answer": "majapahit"
-}, {
-  "clue": "Nama Kota di Jabar",
-  "answer": "garut"
-}, {
-  "clue": "Lembaga Beasiswa",
-  "answer": "lpdp"
-}, {
-  "clue": "Mesin Pencari",
-  "answer": "google"
-}, {
-  "clue": "Perusahaan Dagang Kolonial",
-  "answer": "voc"
-}, {
-  "clue": "Tanjung... (Ibukota Kaltara)",
-  "answer": "selor"
-}, {
-  "clue": "Jenis Pendanaan",
-  "answer": "hibah"
-}, {
-  "clue": "Danan di Sumbar",
-  "answer": "maninjau"
-}, {
-  "clue": "Rumah Adat Jawa",
-  "answer": "joglo"
-}, {
-  "clue": "Tokoh Pewayangan",
-  "answer": "arjuna"
-}, {
-  "clue": "Asia Tenggara",
-  "answer": "asean"
-}, {
-  "clue": "Slogan APBN",
-  "answer": "uangkita"
-}];
-},{}],"tts/tts.js":[function(require,module,exports) {
-"use strict";
-
-var data = _interopRequireWildcard(require("./questions.json"));
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
+})({"script.js":[function(require,module,exports) {
 var orderArr = [];
 var questionNumber = 10;
-console.log(data);
+var data = [{
+  clue: 'Bulan Hari Oeang',
+  answer: 'Oktober'
+}, {
+  clue: 'Bulan Kemerdekaan',
+  answer: 'agustus'
+}, {
+  clue: 'Nama Kabupaten di Jawa Tengah',
+  answer: 'batang'
+}, {
+  clue: 'Nilai Tukar Mata Uang',
+  answer: 'kurs'
+}, {
+  clue: 'Mata Uang Asing',
+  answer: 'valas'
+}, {
+  clue: 'Asal Kata Rupliah',
+  answer: 'rupiya'
+}, {
+  clue: 'Material Uang Koin',
+  answer: 'alumunium'
+}, {
+  clue: 'Seribu Rupiah',
+  answer: 'ceban'
+}, {
+  clue: 'Kenaikan harga-harga',
+  answer: 'inflasi'
+}, {
+  clue: 'Pemotongan Nilai Mata Uang',
+  answer: 'sanering'
+}, {
+  clue: 'Barang ditukar Barang',
+  answer: 'barter'
+}, {
+  clue: 'Oeang Republik Indonesia',
+  answer: 'ori'
+}, {
+  clue: 'Perusahaan Pencetak Rupiah',
+  answer: 'peruri'
+}, {
+  clue: 'Salah Satu Jenis Pajak',
+  answer: 'PPNBM'
+}, {
+  clue: 'Tari di uang Rp10.000',
+  answer: 'pakarena'
+}, {
+  clue: 'Tari di uang Rp50.000',
+  answer: 'legong'
+}, {
+  clue: 'Pulau Terluar Indonesia',
+  answer: 'miangas'
+}, {
+  clue: 'Question: 18',
+  answer: 'eighteen'
+}, {
+  clue: 'Question: 19',
+  answer: 'nineteen'
+}, {
+  clue: 'Question: 20',
+  answer: 'twenty'
+}, {
+  clue: 'Question: 21',
+  answer: 'twenty1'
+}, {
+  clue: 'Question: 22',
+  answer: 'twenty2'
+}, {
+  clue: 'Question: 23',
+  answer: 'twenty3'
+}, {
+  clue: 'Question: 24',
+  answer: 'twenty4'
+}, {
+  clue: 'Question: 25',
+  answer: 'twenty5'
+}, {
+  clue: 'Question: 26',
+  answer: 'twenty6'
+}, {
+  clue: 'Question: 27',
+  answer: 'twenty7'
+}, {
+  clue: 'Question: 28',
+  answer: 'twenty8'
+}, {
+  clue: 'Question: 29',
+  answer: 'twenty9'
+}, {
+  clue: 'Question: 30',
+  answer: 'thirty'
+}, {
+  clue: 'Question: 31',
+  answer: 'thirty1'
+}, {
+  clue: 'Question: 32',
+  answer: 'thirty2'
+}, {
+  clue: 'Question: 33',
+  answer: 'thirty3'
+}, {
+  clue: 'Question: 34',
+  answer: 'thirty4'
+}, {
+  clue: 'Question: 35',
+  answer: 'thirty5'
+}, {
+  clue: 'Question: 36',
+  answer: 'thirty6'
+}, {
+  clue: 'Question: 37',
+  answer: 'thirty7'
+}, {
+  clue: 'Question: 38',
+  answer: 'thirty8'
+}, {
+  clue: 'Question: 39',
+  answer: 'thirty9'
+}, {
+  clue: 'Question: 40',
+  answer: 'fourty'
+}, {
+  clue: 'Question: 41',
+  answer: 'fourty1'
+}, {
+  clue: 'Question: 42',
+  answer: 'fourty2'
+}, {
+  clue: 'Question: 43',
+  answer: 'fourty3'
+}, {
+  clue: 'Question: 44',
+  answer: 'fourty4'
+}, {
+  clue: 'Question: 45',
+  answer: 'fourty5'
+}, {
+  clue: 'Question: 46',
+  answer: 'fourty6'
+}, {
+  clue: 'Question: 47',
+  answer: 'fourty7'
+}, {
+  clue: 'Question: 48',
+  answer: 'fourty8'
+}, {
+  clue: 'Question: 49',
+  answer: 'fourty9'
+}, {
+  clue: 'Question: 50',
+  answer: 'fifty'
+}];
 
 function shuffle(array) {
   for (var i = array.length - 1; i > 0; i--) {
@@ -306,7 +296,7 @@ function init() {
 init();
 
 function loadClues() {
-  for (var i = 0; i < questionNumber; i++) {
+  for (i = 0; i < questionNumber; i++) {
     //$("#cluesAcross").append("<div class='line'><input class='word' type='text' value="+ data[orderArr[i]].answer+"/><span class='lineNum'></span><input class='clue' value="+ data[orderArr[i]].clue+" />");
     $(".line").eq(i).find("input.word").attr("value", data[orderArr[i]].answer);
     $(".line").eq(i).find("input.clue").attr("value", data[orderArr[i]].clue);
@@ -1066,7 +1056,7 @@ $(function () {
   Generate();
   Play();
 });
-},{"./questions.json":"tts/questions.json"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1094,7 +1084,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60116" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52969" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1270,5 +1260,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","tts/tts.js"], null)
-//# sourceMappingURL=/tts.ef10d797.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
+//# sourceMappingURL=/script.75da7f30.js.map

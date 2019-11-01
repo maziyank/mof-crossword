@@ -6,4 +6,8 @@
   color: black;
 }
 
+.card-menu a:hover {
+  text-decoration-line: none;
+}
+
 /*# sourceMappingURL=/src.9ad09f98.css.map */
