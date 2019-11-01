@@ -59,6 +59,12 @@ body{
     z-index: -999;
 }
 
+.panel{
+    -webkit-box-shadow: -4px 2px 12px -3px rgba(36, 44, 60,1);
+    -moz-box-shadow: -4px 2px 12px -3px rgba(36, 44, 60,1);
+    box-shadow: -4px 2px 12px -3px rgba(36, 44, 60,1);
+}
+
 .logo{
     position: absolute;
     left: 5px;
