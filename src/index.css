@@ -5,3 +5,7 @@
 .card-menu .panel-body {
   color: black;
 }
+
+.card-menu a:hover {
+  text-decoration-line: none;
+}
