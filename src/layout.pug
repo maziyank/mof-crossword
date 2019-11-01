@@ -10,6 +10,7 @@ html(lang="en")
     block styles
       link(rel="shortcut icon", href="/assets/img/favicon.ico", type="image/x-icon")
       link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+      link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
       link(rel="stylesheet", href="/assets/css/style.css")
     script(src="https://platform-api.sharethis.com/js/sharethis.js#property=5dbc3b671c572e0012feeb1b&product=sticky-share-buttons", async="async")
   body
@@ -19,6 +20,10 @@ html(lang="en")
       img(src="/assets/img/logo.png", class="logo")
     .col-md-10.col-md-offset-1.col-xs-12.wjec-container
       block content
+        hr
+        .row.margin-bottom-sm
+          .col-xs-12.buttonList
+            a.btn.btn-lg.btn-default(href="../index.pug") Beranda #[i.fa.fa-home]
     block foot
       .footer
         p Laman Web Virtual Booth untuk Family Gathering Hari Oeang Republik Indonesia ke-73 by #[a(href="https://mofjs.github.id") MOFJS]

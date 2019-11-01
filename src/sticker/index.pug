@@ -3,11 +3,22 @@ extends ../layout.pug
 block vars
   - title = "Sticker"
 
-block content
+prepend content
   h1.title Ayo dapatkan sticker-sticker lucu ini!
-  .col-sm-6
-    .thumbnail
-      img(src="/assets/img/sticker-01.jpg", alt="", srcset="")
-  .col-sm-6
-    h1.text-center Desain keren dengan gambar-gambar lucu
-    h1.text-center Cocok banget kamu tempel di laptop biar makin keren.
+  hr
+  .row
+    .col-sm-6
+      .thumbnail
+        img(src="/assets/img/sticker-01.jpg", alt="", srcset="")
+    .col-sm-6
+      h1.text-center Desain keren dengan gambar-gambar lucu
+      br
+      h1.text-center Cocok banget kamu tempel di laptop biar makin keren.
+  .row
+    .col-sm-6
+      h1.text-center Ada juga stiker permainan video favorit kamu.
+      br
+      h1.text-center Atau bahasa pemrograman yang kamu gunakan.
+    .col-sm-6
+      .thumbnail
+        img(src="/assets/img/sticker-02.jpg", alt="", srcset="")
