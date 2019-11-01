@@ -134,7 +134,7 @@ module.exports = [{
   "clue": "Mata Uang Asing",
   "answer": "valas"
 }, {
-  "clue": "Asal Kata Rupliah",
+  "clue": "Asal Kata Ruplah",
   "answer": "rupiya"
 }, {
   "clue": "Material Uang Koin",
@@ -1095,7 +1095,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64676" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52842" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
