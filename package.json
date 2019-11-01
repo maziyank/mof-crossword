@@ -6,7 +6,7 @@
   "author": "MOF.JS",
   "license": "MIT",
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm run dev -- --open",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url .",
     "deploy": "npm run build && gh-pages -d dist"
