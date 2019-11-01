@@ -2,3 +2,36 @@ extends ../layout.pug
 
 block vars
   - title = "Buku Tamu"
+
+prepend content
+  h1.title Buku Tamu Pengunjung
+  hr
+  form(action="https://docs.google.com/forms/d/e/1FAIpQLSdYwksLqzlbkpVMxnnsnuglzlyDHrADOJeV_rQVoRX4Lws-_g/formResponse", method="post")
+    .form-group
+      label(for="inputNama") Nama #[sup * Harus diisi!]
+      input#inputNama.form-control(type="text", name="entry.2005620554", placeholder="Nama anda...")
+    .form-group
+      label(for="inputEmail") Email
+      input#inputEmail.form-control(type="email", name="entry.1045781291", placeholder="Alamat surel...")
+    .form-group
+      label Penilaian
+      br
+      label.radio-inline.
+        #[input#inputPenilaian(type="radio", name="entry.1163325417" value="1")]
+        Fatal
+      label.radio-inline.
+        #[input#inputPenilaian(type="radio", name="entry.1163325417" value="2")]
+        Error
+      label.radio-inline.
+        #[input#inputPenilaian(type="radio", name="entry.1163325417" value="3")]
+        Warning
+      label.radio-inline.
+        #[input#inputPenilaian(type="radio", name="entry.1163325417" value="4")]
+        Normal
+      label.radio-inline.
+        #[input#inputPenilaian(type="radio", name="entry.1163325417" value="5")]
+        Success
+    .form-group
+      label(for="inputKomentar") Pendapat
+      textarea#inputKomentar.form-control(name="entry.839337160", cols="30", rows="5", placeholder="Pendapat anda...")
+    button.btn.btn-default.btn-lg(type="submit") Kirim
