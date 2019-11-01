@@ -2,3 +2,30 @@ extends ../layout.pug
 
 block vars
   - title = "IoT Corner"
+
+prepend content
+  h1.title IoT Corner
+  hr
+  p.
+    Internet of Things adalah suatu konsep dimana objek tertentu punya kemampuan untuk mentransfer data lewat jaringan tanpa memerlukan adanya interaksi dari manusia ke manusia ataupun dari manusia ke perangkat komputer. #[a(href="#ref1")=`[1]`]
+  .row
+    .col-sm-6.col-sm-offset-3
+      .thumbnail
+        img(src="/assets/img/iot-01.jpg", alt="iot", srcset="")
+  p.
+    Pada beberapa kesempatan sebelumnya #[a(href="#ref2")=`[2]`], MOF.JS pernah mengadakan meetup dengan materi berjudul "Introduction to Internet of Things" disampaikan oleh mas Hanung, dengan menunjukkan beberapa penerapan IoT pada beberapa perangkat Rumah Tangga.
+  .row
+    .col-sm-6.col-sm-offset-3
+      .thumbnail
+        img(src="/assets/img/iot-02.jpg", alt="iot-hanung", srcset="")
+  p.
+    Di booth MOF.JS ini beliau akan memperagakan penerapan IoT, dan pengunjung dapat berinteraksi dengan beliau.
+  .row
+    .col-sm-6.col-sm-offset-3
+      .thumbnail
+        video(src="/assets/videos/iot-03.mp4", controls)
+  hr
+  p
+    small#ref1 #[a(href="https://www.dewaweb.com/blog/internet-of-things/", style="color: #fff;")=`[1] https://www.dewaweb.com/blog/internet-of-things/`]
+  p
+    small#ref2 #[a(href="https://mofjs.github.io/materi/IoT%20-%20Hanung.pdf", style="color: #fff;")=`[2] https://mofjs.github.io/materi/IoT%20-%20Hanung.pdf`]
