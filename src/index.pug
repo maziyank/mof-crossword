@@ -6,42 +6,50 @@ append vars
       {
         url: "intro/index.pug",
         title: "Apa itu MOF.JS",
-        description: "Pengenalan komunitas MOF.JS"
+        description: "Pengenalan komunitas MOF.JS",
+        icon: "users"
       },
       {
         url: "map/index.pug",
         title: "Di mana booth MOF.JS?",
-        description: "Cari tau lokasi booth MOF.JS di acara Family Gathering Hari Oeang RI ke-73"
+        description: "Cari tau lokasi booth MOF.JS di acara Family Gathering Hari Oeang RI ke-73",
+        icon: "map-marker"
       },
       {
         url: "https://form.jotform.me/93044361208451",
         title: "Buku Tamu",
-        description: "Isi buku tamu pengunjung booth."
+        description: "Isi buku tamu pengunjung booth.",
+        icon: "address-book"
       },
       {
         url: "tts/index.pug",
         title: "TTS Spesial Hari Oeang",
-        description: "Tantang pengetahuanmu di bidang Keuangan Negara dengan menjawab soal Teka-Teki Silang"
+        description: "Tantang pengetahuanmu di bidang Keuangan Negara dengan menjawab soal Teka-Teki Silang",
+        icon: "question"
       },
       {
         url: "iot/index.pug",
         title: "IoT Corner",
-        description: "Salah satu yang ada di booth MOF.JS, demo, workshop Internet of Things"
+        description: "Salah satu yang ada di booth MOF.JS, demo, workshop Internet of Things",
+        icon: "microchip"
       },
       {
         url: "game/index.pug",
         title: "Video Game Corner",
-        description: "Hibur diri bersama keluarga dengan bermain game bersama"
+        description: "Hibur diri bersama keluarga dengan bermain game bersama",
+        icon: "gamepad"
       },
       {
         url: "sticker/index.pug",
         title: "Sticker Lucu",
-        description: "Dapatkan sticker lucu bertema teknologi."
+        description: "Dapatkan sticker lucu bertema teknologi.",
+        icon: "smile-o"
       },
       {
         url: "https://chat.whatsapp.com/B6aOjtJ9XGU0zQ4ezSn2iZ",
         title: "Join MOF.JS",
-        description: "Gabung di Komunitas Kami."
+        description: "Gabung di Komunitas Kami.",
+        icon: "whatsapp"
       }
     ];
 
@@ -58,4 +66,7 @@ block content
             .panel-heading
               h2=menu.title
             .panel-body
-              p=menu.description
+              .col-xs-9
+                p=menu.description
+              .col-xs-3
+                i.fa(class="fa-"+menu.icon)
