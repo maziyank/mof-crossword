@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,0BACE,UACF,CAEA,uBACE,UACF,CAEA,mBACE,yBACF","file":"src.2e943e4b.css","sourceRoot":"..\\src","sourcesContent":[".card-menu .panel-heading {\r\n  color: gold;\r\n}\r\n\r\n.card-menu .panel-body {\r\n  color: black;\r\n}\r\n\r\n.card-menu a:hover {\r\n  text-decoration-line: none;\r\n}"]}
