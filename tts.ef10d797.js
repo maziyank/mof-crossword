@@ -279,8 +279,7 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var orderArr = [];
-var questionNumber = 10;
-console.log(data);
+var questionNumber = 8;
 
 function shuffle(array) {
   for (var i = array.length - 1; i > 0; i--) {
@@ -298,7 +297,6 @@ function init() {
     orderArr.push(index);
     shuffle(orderArr);
   });
-  console.log(orderArr);
   loadClues();
 }
 
@@ -1039,14 +1037,17 @@ String.prototype.replaceAll = function (replaceThis, withThis) {
 
 
 $("#btnCheck").on('click', function () {
-  $(this).blur(); //clear values from incorrect boxes
+  $(this).blur();
+  var AllCorrect = true; //clear values from incorrect boxes
 
   $(".square input").each(function () {
     if ($(this).attr('data-letter') !== $(this).val().toUpperCase()) {
-      $(this).val('');
       $(this).removeClass('correct');
+      $(this).addClass('incorrect');
+      AllCorrect = false;
     } else {
       $(this).addClass('correct');
+      $(this).removeClass('incorrect');
     }
   });
 });
@@ -1094,7 +1095,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60253" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54096" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
